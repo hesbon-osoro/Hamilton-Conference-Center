@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Hamilton Conference Center Style Sheet
+   Author: Hesbon Osoro
+   Date: 12/9/22
+
+   Filename:         hcc_styles.css
+   Supporting files: 
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-wrap: wrap;
+}
+
+/* body styles*/
+body {
+  font-size: 16px;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: 1150px;
+  padding-left: 10px;
+  border: 1px solid black;
+}
+
+/* heading styles*/
+h1 {
+  background-color: #f5f5f5;
+  padding-left: 10px;
+  font-family: Algerian;
+  text-align: left;
+  letter-spacing: 5px;
+  padding-right: 10px;
+}
+
+/*header styles*/
+header {
+  background-color: lightblue;
+  text-align: center;
+}
+
+/* navigation list styles*/
+nav ul li {
+  background: url(tabred.jpg) no-repeat top left;
+  display: block;
+  font-size: 150px;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  text-align: left;
+  margin: 0px 5px;
+  min-width: 90px;
+  padding: 0px 10px;
+}
+
+/*navigation list hyperlink styles*/
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* navigation hover styles*/
+nav ul li:hover {
+  background: url(tab.jpg) no-repeat top left;
+}
+
+/* section paragraph styles*/
+section p {
+  font-size: 18px;
+  line-height: 25px;
+  padding-left: 10px;
+  padding-top: 10px;
+  height: 50px;
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-gap: 20px;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 20px;
+  column-rule: 2px solid purple;
+  -webkit-column-rule: 2px solid purple;
+  -moz-column-rule: 2px solid purple;
+}
+
+/* italic content styles*/
+i {
+  padding-left: 10px;
+}
+
+/* emphasize styles*/
+section p em {
+  padding-left: 20px;
+  font-size: 25px;
+  background-color: yellow;
+}
+
+/* footer styles*/
+footer {
+  padding: 10px;
+  width: 1000px;
+}
+
+/* footer address styles*/
+footer address {
+  border-top: 2px solid red;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-variant: small-caps;
+  text-align: center;
+}

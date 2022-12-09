@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Schedule Table Style Sheet
+   Author: Hesbon Osoro
+   Date: 12/9/22   
+
+   Filename:         hcc_schedule.css
+   Supporting Files: 
+
+*/
+
+/* table schedule styles*/
+.schedule {
+  width: 1000px;
+  height: 560px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  float: center;
+  border: 2px outset black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+
+/* table head styles*/
+thead th {
+  font-size: 18px;
+  background-color: #f0f8ff;
+  border: 1px solid gray;
+}
+
+/*table column group first column styles*/
+colgroup.firstcol:first-of-type {
+  border: 1px solid gray;
+}
+
+/* table body heading styles*/
+tbody th {
+  font-size: 18px;
+  background-color: #f0f8ff;
+  border: 1px solid gray;
+}
+
+/* table body data cells*/
+tbody td {
+  font-size: 18px;
+  border: 1px solid black;
+  vertical-align: center;
+  text-align: center;
+}
+
+/*table caption styles*/
+caption {
+  padding: 10px;
+  font-weight: bold;
+  /* font-size: 35px; */
+  font-family: AR JULIAN;
+  color: #0000cd;
+  letter-spacing: 3px;
+}
+
+/* table scheule first column styles*/
+table.schedule col.firstcol {
+  width: 9%;
+}
+
+/* table scheule second column styles*/
+table.schedule col.secondcol {
+  width: 15%;
+}
+
+/* table scheule last column styles*/
+table.schedule td:last-of-type {
+  border-spacing: 50px;
+}
+
+/* table romm_desc styles*/
+table.room_desc {
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  float: center;
+  border: 2px solid gray;
+  border-collapse: collapse;
+  background-size: cover;
+  padding: 10px;
+  text-align: center;
+}
+
+/* table room_desc data cells*/
+table.room_desc td {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* table room_desc last data cells*/
+table.room_desc td:last-of-type {
+  text-align: center;
+}
